@@ -1,9 +1,22 @@
-/* purgecss start ignore */
 @tailwind base;
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;
+
+/* Write your own custom base styles here */
 
 *:focus {
   outline: none;
 }
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+/* .btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+} */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
