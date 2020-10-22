@@ -5,7 +5,7 @@ makeServer();
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="container m-0 md:mx-auto md:max-w-5xl md:mt-5">
+    <div className="container m-0 max-w-full h-screen md:mx-auto md:max-w-xl">
       <Component {...pageProps} />
     </div>
   );

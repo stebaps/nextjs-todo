@@ -3,15 +3,13 @@ import TodoList from "../components/TodoList";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex md:h-screen">
       <Head>
         <title>NextJS Todo App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <TodoList />
-      </main>
+      <TodoList />
     </div>
   );
 }

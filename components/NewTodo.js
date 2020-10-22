@@ -29,6 +29,7 @@ const NewTodo = ({ onNewTodo }) => {
           placeholder="What do you need to do?"
           value={todo}
           onChange={onTodoChanged}
+          autoComplete="off"
         />
       </form>
     </div>

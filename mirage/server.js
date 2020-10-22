@@ -14,6 +14,7 @@ const makeServer = () => {
         const attrs = {
           text: request.requestBody.todo,
           complete: false,
+          createdAt: new Date(),
         };
 
         return schema.db.todos.insert(attrs);
@@ -36,9 +37,24 @@ const makeServer = () => {
 
   server.db.loadData({
     todos: [
-      { id: "1", text: "Walk the dog", complete: true },
-      { id: "2", text: "Buy groceries", complete: false },
-      { id: "3", text: "Make dinner", complete: false },
+      {
+        id: "1",
+        text: "Walk the dog",
+        complete: false,
+        createdAt: "2020-10-22T08:37:13.309Z",
+      },
+      {
+        id: "2",
+        text: "Buy groceries",
+        complete: false,
+        createdAt: "2020-10-22T09:37:13.309Z",
+      },
+      {
+        id: "3",
+        text: "Make dinner",
+        complete: false,
+        createdAt: "2020-10-22T10:37:13.309Z",
+      },
     ],
   });
 };

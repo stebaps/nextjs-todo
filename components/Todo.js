@@ -17,7 +17,11 @@ const Todo = (props) => {
 
   return (
     <div>
-      <div className="bg-purple-600 text-white rounded-lg shadow-lg p-5 mb-5 flex">
+      <div
+        className={`${
+          todo.complete ? "bg-gray-500" : "bg-purple-600"
+        } text-white rounded-lg shadow-lg p-5 mb-5 flex`}
+      >
         <span className={`flex-grow ${todo.complete ? "line-through" : ""}`}>
           {todo.text}{" "}
         </span>
@@ -26,7 +30,6 @@ const Todo = (props) => {
           className="flex-none form-checkbox mt-1"
           checked={todo.complete}
           onChange={onChange}
-          autoComplete="no"
         />
       </div>
     </div>
