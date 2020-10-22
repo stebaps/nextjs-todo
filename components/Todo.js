@@ -19,7 +19,7 @@ const Todo = (props) => {
     <div>
       <div
         className={`${
-          todo.complete ? "bg-gray-500" : "bg-purple-600"
+          todo.complete ? "bg-gray-500" : "bg-purple-400"
         } text-white rounded-lg shadow-lg p-5 mb-5 flex`}
       >
         <span className={`flex-grow ${todo.complete ? "line-through" : ""}`}>
